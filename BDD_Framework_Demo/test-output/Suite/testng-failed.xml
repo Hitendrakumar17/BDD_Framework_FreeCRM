@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Demo">
+    <classes>
+      <class name="com.cucumber.framework.runner.FacebookLoginFeatureRunner"/>
+    </classes>
+  </test> <!-- Demo -->
+  <test name="Demo(failed)">
+    <classes>
+      <class name="com.cucumber.framework.runner.FacebookLoginFeatureRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.FacebookLoginFeatureRunner -->
+    </classes>
+  </test> <!-- Demo(failed) -->
+</suite> <!-- Failed suite [Suite] -->
